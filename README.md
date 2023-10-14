@@ -1,4 +1,4 @@
-# Anomaly detection in Time Series Data of Wind Turbines
+# Automated anomaly detection wind turbines power curve data.
 Identifying anomalies in wind turbine performance using wind turbine operational data produced during a single year.
 
 This repository contains the final 4-week capstone project on Anomaly detection in Time Series Data of Wind Turbines.
