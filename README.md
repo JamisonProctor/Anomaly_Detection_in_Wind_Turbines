@@ -21,7 +21,7 @@ While all models were able to identify anomalies, visual inspection revealed tha
 
 Despite having the most promising results of the models tested, the performance of Isolation Forest varied widely depending on the data set. In many cases Isolation Forest failed to deliver the same quality results as statistically based approaches, defining areas of “normal” data as anomalous. 
 
-![Additional Example of Isolation Forest Output](reports/figures/Isolation Forest.png)
+![Additional Example of Isolation Forest Output](/Isolation_Forest.png)
 
 
 
@@ -29,7 +29,7 @@ Because of this shortcoming, the use of Isolation Forest alone did not seem suff
 
 After Isolation Forest was used to label the entire data set (consisting of one year of data), the data set was split into weeks. Any data which Isolation Forest labelled as ‘normal’ was removed from each week’s data, leaving only a ‘cloud’ of anomalous data. Each cloud of data was then feed to a [KMeans model](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) and clustered into one of two groups. 
 
-![Anomaly Cloud](reports/figures/Anomaly Cloud.png)
+![Anomaly Cloud](/Anomaly_Cloud.png)
 
 
 Regardless of their inherent normality, each week of data contained some volume of anomalies identified by the Isolation Forest model. By using KMeans to cluster the weeks into two groups, weeks which were ‘more normal’ would group together while weeks which were ‘less normal’ would group together as well. The results of this approach were mixed, but did show promise in specific situations.
@@ -51,12 +51,12 @@ This combined model was able to successfully identify power curtailments in thre
 
 
 
-![Promising Results](reports/figures/ACC - Promising Results.png)
+![Promising Results](/Promising_Results.png)
 
 
 However, this approach struggles to deliver clear signals when the operation of the turbine is erratic, or there are multiple failure modes present in the same dataset. In such cases, weeks which seemed very similar were labelled as different and weeks which were clearly very different were not singled out. 
 
-![Less-Than-Clear Labels](reports/figures/ACC - Struggles.png)
+![Less-Than-Clear Labels](/Struggles.png)
 
 
 
