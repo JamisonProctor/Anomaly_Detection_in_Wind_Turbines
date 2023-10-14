@@ -15,7 +15,7 @@ Investigation of machine learning based approaches, especially those which requi
 
 While all models were able to identify anomalies, visual inspection revealed that Isolation Forest was best at correctly identifying anomalous data points. LOF provided comparable yet inferior results. CBLOF, COPOD, and GMM struggled to differentiate between anomalous and normal data. 
 
-![Select Comparison of ML Model Outputs](reports/figures/ML - Comparison.png)
+![Select Comparison of ML Model Outputs](/ML_Comparison.png)
 
 
 
